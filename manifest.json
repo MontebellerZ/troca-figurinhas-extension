@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Restrição - TrocaFigurinhas",
+  "version": "1.0",
+  "description": "Remove automaticamente a Restrição do site trocafigurinhas.com",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.trocafigurinhas.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
