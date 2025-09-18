@@ -1,8 +1,12 @@
 function hideRestricao() {
-  const el = document.querySelector("#ctl00_upRestricao");
+  const selectorRestricao = "#ctl00_upRestricao";
+
+  const el = document.querySelector(selectorRestricao);
   if (el && el.style.display !== "none") {
     el.style.display = "none";
-    console.log("Div #ctl00_upRestricao foi escondida!");
+    console.log(`Div ${selectorRestricao} foi escondida!`);
+  } else {
+    console.log(`Não achei a div ${selectorRestricao}`);
   }
 }
 
